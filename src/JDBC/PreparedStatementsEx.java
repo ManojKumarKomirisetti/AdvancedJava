@@ -34,7 +34,7 @@ class PreparedStatementsEx
     	PreparedStatement pst = connect.prepareStatement(Query);
         		
     	
-    	for(int j =0; j<3;j++)
+    	/*for(int j =0; j<3;j++)
     	{
     		 
     	        
@@ -58,9 +58,20 @@ class PreparedStatementsEx
     	        int i = pst.executeUpdate();
         		System.out.println("Added Successfully! and Records Updated::"+i);
     	        
-    	}
+    	}*/
     	sc.close();
-    	
+    	/*String Query1 = "update student set pin = ? where name = ? ";
+    	pst = connect.prepareStatement(Query1);
+    	pst.setInt(1, 500208);
+    	pst.setString(2,"Manoj Kumar" );
+    	int i = pst.executeUpdate(); 
+        	System.out.println(i+" :No of rows got updated");*/
+        	
+        	String Query2 = "delete from student where pin=? ";
+        	pst = connect.prepareStatement(Query2);
+        	pst.setInt(1, 4537);
+        	int i = pst.executeUpdate(); 
+            	System.out.println(i+" :No of rows got Deleted");
         	
     		
     		

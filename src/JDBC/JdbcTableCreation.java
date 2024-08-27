@@ -1,4 +1,4 @@
-package JDBC;
+package JDBC; 
 import java.sql.*;
 class JdbcTableCreation
 {

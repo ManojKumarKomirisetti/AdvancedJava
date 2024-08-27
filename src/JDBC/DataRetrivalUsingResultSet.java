@@ -31,7 +31,8 @@ class DataRetrivalUsingResultSet
      public static void getdata() throws SQLException
      {
     	 ResultSet Rs = null;
-    	  String Query = "Select * from Student";
+    	  //String Query = "Select * from Student";
+    	 String Query = "Select * from Student where pin= 500208";
     	  pst = connect.prepareStatement(Query);
     	  Rs = pst.executeQuery();
     	  while(Rs.next()) 

@@ -34,7 +34,7 @@ class PreparedStatementsEx
     	PreparedStatement pst = connect.prepareStatement(Query);
         		
     	
-    	/*for(int j =0; j<3;j++)
+    	for(int j =0; j<3;j++)
     	{
     		 
     	        
@@ -58,7 +58,7 @@ class PreparedStatementsEx
     	        int i = pst.executeUpdate();
         		System.out.println("Added Successfully! and Records Updated::"+i);
     	        
-    	}*/
+    	}
     	sc.close();
     	/*String Query1 = "update student set pin = ? where name = ? ";
     	pst = connect.prepareStatement(Query1);

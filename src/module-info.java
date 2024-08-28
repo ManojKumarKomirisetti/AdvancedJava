@@ -1,9 +1,5 @@
-/**
- * 
- */
-/**
- * @author manoj kumar
- *
- */
 module AdvancedJava {
+	exports JDBC;
+
+	requires java.sql;
 }
